@@ -1,0 +1,8 @@
+bin/
+obj/
+.vs/
+.runtime/
+tests/
+tools/
+*.user
+*.suo

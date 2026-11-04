@@ -29,4 +29,8 @@ O banco usado é o MongoDB `zlora_csharp`, seguindo as coleções planejadas em 
 
 Para hospedar, publique o projeto ASP.NET Core e configure as variáveis `MongoConnection__ConnectionString`, `MongoConnection__Database` e, se desejar recuperação de senha por e-mail, as chaves de `EmailSettings`. Não coloque senha real de e-mail no repositório. A hospedagem também precisa de um MongoDB acessível pela internet, como um cluster gratuito compatível com MongoDB.
 
+### Render
+
+Esta pasta já contém `Dockerfile` e `.dockerignore`. Na Render, crie um **Web Service**, escolha o repositório e informe `Zlora_CSharp_MVC_Entrega` como Root Directory. Se o repositório contiver somente esta pasta, deixe a raiz vazia. Selecione o plano Free e use as variáveis do MongoDB Atlas. O contêiner já escuta na porta 10000.
+
 As contas de demonstração são criadas somente quando o banco ainda não possui empresas. O cadastro real de um estabelecimento cria sua própria empresa e seu primeiro profissional, permitindo que a administradora atenda sozinha ou cadastre mais colaboradores.
