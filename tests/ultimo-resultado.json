@@ -1,0 +1,14 @@
+{
+  "data": "2026-10-15T20:35:48.771Z",
+  "identificador": "1792096543827",
+  "resultados": [
+    {
+      "versao": "CSharp",
+      "verificacoes": 20
+    },
+    {
+      "versao": "PHP",
+      "verificacoes": 20
+    }
+  ]
+}

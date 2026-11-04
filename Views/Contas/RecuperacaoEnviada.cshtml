@@ -1,0 +1,6 @@
+@{ ViewData["Title"] = "Recuperação de senha"; }
+<section class="content-card">
+    <h1>Confira seu e-mail</h1><p>Se o e-mail informado estiver cadastrado, você receberá um link para redefinir sua senha. Confira também a pasta de spam.</p>
+    <p>O link vale por 30 minutos e pode ser usado uma única vez. Para solicitar outro envio, aguarde um minuto.</p>
+    <a asp-action="Login" class="btn btn-primary">Voltar ao login</a><a asp-action="EsqueciSenha" class="ml-3">Solicitar outro link</a>
+</section>

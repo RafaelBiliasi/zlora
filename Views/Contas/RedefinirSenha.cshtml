@@ -1,0 +1,12 @@
+@model RedefinirSenhaViewModel
+@{ ViewData["Title"] = "Redefinir senha"; }
+<section class="content-card registro">
+    <h1>Redefinir senha</h1><p>Escolha uma nova senha entre 6 e 15 caracteres.</p>
+    <form asp-action="RedefinirSenha" method="post">
+        <div asp-validation-summary="All" class="validation" role="alert"></div>
+        <input asp-for="UserId" type="hidden"><input asp-for="Token" type="hidden">
+        <div class="form-group"><label asp-for="NovaSenha">Nova senha</label><input asp-for="NovaSenha" class="form-control" type="password" minlength="6" maxlength="15" autocomplete="new-password" required></div>
+        <div class="form-group"><label asp-for="ConfirmarSenha">Confirmar nova senha</label><input asp-for="ConfirmarSenha" class="form-control" type="password" minlength="6" maxlength="15" autocomplete="new-password" required></div>
+        <button class="btn btn-primary" type="submit">Salvar nova senha</button><a asp-action="EsqueciSenha" class="ml-3">Solicitar outro link</a>
+    </form>
+</section>

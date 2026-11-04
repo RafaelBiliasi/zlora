@@ -1,0 +1,702 @@
+@{ Layout = null; }
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Zlora — Gestão e Agendamento para Beleza e Estética</title>
+    <meta name="author" content="Zlora">
+    <meta name="description" content="Sistema de gestão e agendamento online para salões de beleza, barbearias, clínicas de estética e lash designers.">
+    <meta name="keywords" content="Zlora, gestão para salão de beleza, agendamento online, clínica de estética, barbearia, lash designer">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6F3CE7">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Zlora — Gestão e Agendamento para Beleza e Estética">
+    <meta property="og:description" content="Sistema completo para gestão de salões, barbearias, clínicas de estética e lash designers.">
+    <meta property="og:type" content="website">
+    <!-- TODO: VALIDAR — adicionar og:url, og:image, twitter:card quando disponíveis -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@@400;500;600;700;800&family=Outfit:wght@@600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/DS0HomePageDeslogada/css/boostrap.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="/DS0HomePageDeslogada/css/zlora.css">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <header class="nav-menu fixed-top" id="nav-menu">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg" aria-label="Navegação principal">
+                <a class="navbar-brand brand-font" href="#home" aria-label="Zlora — ir para o início">
+                    Zlora
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                        data-toggle="collapse" data-target="#menuPrincipal"
+                        aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#funcoes">Funcionalidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#precos">Preços</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+                        <li class="nav-item">
+                            <a href="#cadastro" class="nav-link btn-cadastro">Teste grátis</a>
+                        </li>
+                        <!-- TODO: VALIDAR — quando existir blog oficial, apontar href abaixo -->
+                        <li class="nav-item"><a class="nav-link" href="#blog" data-todo="blog">Blog</a></li>
+                        <!-- TODO: VALIDAR — quando existir rota de login, apontar href abaixo -->
+                        <li class="nav-item"><a class="nav-link" href="/Contas/Login">Acessar</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============ HERO ============ -->
+        <section class="hero bg-hero" id="home">
+            <div class="container hero-content">
+                <h1 class="brand-font hero-title">Zlora</h1>
+                <p class="hero-tagline">Tecnologia e gestão para o sucesso do seu negócio de beleza e estética.</p>
+                <p class="hero-cta">
+                    <a href="#cadastro" class="btn btn-header">Inicie essa experiência</a>
+                </p>
+
+                <!-- TODO: VALIDAR — substituir por links oficiais quando o app do Zlora for publicado -->
+                <div class="hero-apps" data-todo="apps">
+                    <p class="text-white hero-apps-label">Aplicativo Zlora</p>
+                    <p class="hero-apps-soon">Em breve nas lojas oficiais.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SOBRE ============ -->
+        <section class="section" id="sobre">
+            <div class="container">
+                <header class="section-title">
+                    <h2>Sobre a <span>Zlora</span></h2>
+                    <p class="section-subtitle">Uma plataforma completa para gestão do seu negócio de beleza</p>
+                </header>
+
+                <div class="row">
+                    <div class="col-12">
+                        <p>A Zlora é uma plataforma web completa para o gerenciamento de salões de beleza, barbearias, clínicas de estética e lash designers. Nosso sistema permite agendamentos online, organização da agenda e otimização de todos os processos do seu estabelecimento.</p>
+                        <p>O sistema é dividido em dois módulos principais:</p>
+
+                        <ul class="modulos">
+                            <li class="webadmin">
+                                <b>Módulo WebAdmin:</b> Onde você pode fazer toda a gestão do estabelecimento, com controle de profissionais, histórico de clientes, controle de comissões, gestão de estoque e relatórios financeiros completos. O sistema é armazenado em nuvem, proporcionando acesso seguro a qualquer hora e local.
+                            </li>
+                            <li class="mobile">
+                                <b>Módulo Aplicativo:</b> Acessível tanto pelo profissional (para acompanhar sua agenda e comissões) quanto pelo cliente (para realizar agendamentos, receber notificações e promoções), facilitando a comunicação e aproximando o estabelecimento do seu cliente.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row mt-5">
+                    <div class="col-md-12 text-center">
+                        <h3 class="objetivo-title">Nosso objetivo</h3>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-4">
+                        <article class="card border-primary h-100">
+                            <div class="card-body">
+                                <div class="media">
+                                    <span class="ti-calendar text-primary media-icon" aria-hidden="true"></span>
+                                    <div class="media-body">
+                                        <h4 class="card-title">Otimizar seu tempo</h4>
+                                        <p class="card-text">Organize sua agenda e estimule mais agendamentos através do aplicativo, evitando conflitos de horário.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-4">
+                        <article class="card border-primary h-100">
+                            <div class="card-body">
+                                <div class="media">
+                                    <span class="ti-face-smile text-primary media-icon" aria-hidden="true"></span>
+                                    <div class="media-body">
+                                        <h4 class="card-title">Fidelizar seu cliente</h4>
+                                        <p class="card-text">Fidelize através do agendamento online, programa de fidelidade, envio de promoções e mensagens de retorno automáticas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-12 col-lg-4 mb-4">
+                        <article class="card border-primary h-100">
+                            <div class="card-body">
+                                <div class="media">
+                                    <span class="ti-bar-chart text-primary media-icon" aria-hidden="true"></span>
+                                    <div class="media-body">
+                                        <h4 class="card-title">Aumentar seu faturamento</h4>
+                                        <p class="card-text">Aumente seu movimento e tenha um maior faturamento com relatórios gerenciais e controle de comissões.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FUNCIONALIDADES ============ -->
+        <section class="section light-bg" id="funcoes">
+            <div class="container">
+                <header class="section-title">
+                    <h2>Funcionalidades da <span>Zlora</span></h2>
+                    <p class="section-subtitle">Tudo o que seu negócio precisa em um só lugar</p>
+                </header>
+
+                <div class="row no-gutters" role="list">
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="ion ion-ios-people"></i></div>
+                            <h3 class="feature-title">Cadastro de Clientes</h3>
+                            <small class="feature-details">RF01</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-user-tie"></i></div>
+                            <h3 class="feature-title">Cadastro de Profissionais</h3>
+                            <small class="feature-details">RF02</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-concierge-bell"></i></div>
+                            <h3 class="feature-title">Cadastro de Serviços</h3>
+                            <small class="feature-details">RF03</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="ion ion-calendar"></i></div>
+                            <h3 class="feature-title">Gerenciamento de Agendamentos</h3>
+                            <small class="feature-details">RF04</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-clock"></i></div>
+                            <h3 class="feature-title">Controle de Horários</h3>
+                            <small class="feature-details">RF05</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="ion ion-clipboard"></i></div>
+                            <h3 class="feature-title">Histórico de Atendimentos</h3>
+                            <small class="feature-details">RF06</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-hand-holding-usd"></i></div>
+                            <h3 class="feature-title">Controle de Comissões</h3>
+                            <small class="feature-details">RF07</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-chart-pie"></i></div>
+                            <h3 class="feature-title">Dashboard</h3>
+                            <small class="feature-details">RF08</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="ion ion-document-text"></i></div>
+                            <h3 class="feature-title">Relatórios</h3>
+                            <small class="feature-details">RF09</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-search"></i></div>
+                            <h3 class="feature-title">Pesquisa e Filtros</h3>
+                            <small class="feature-details">RF10</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-lock"></i></div>
+                            <h3 class="feature-title">Autenticação</h3>
+                            <small class="feature-details">RF11</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-users-cog"></i></div>
+                            <h3 class="feature-title">Gerenciamento de Usuários</h3>
+                            <small class="feature-details">RF12</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-info-circle"></i></div>
+                            <h3 class="feature-title">Status dos Agendamentos</h3>
+                            <small class="feature-details">RF13</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-star"></i></div>
+                            <h3 class="feature-title">Serviços Mais Solicitados</h3>
+                            <small class="feature-details">RF14</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-clock"></i></div>
+                            <h3 class="feature-title">Horários de Maior Demanda</h3>
+                            <small class="feature-details">RF15</small>
+                        </div>
+                    </a>
+                    <a class="col-lg-3 col-sm-6 feature-bg" href="#" role="listitem" tabindex="0">
+                        <div class="feature-inner text-center">
+                            <div class="icon-box" aria-hidden="true"><i class="fa fa-shield-alt"></i></div>
+                            <h3 class="feature-title">Segurança e Privacidade</h3>
+                            <small class="feature-details">RNF04, RNF06</small>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PASSOS ============ -->
+        <section class="section" id="passos">
+            <div class="container">
+                <header class="section-title">
+                    <h2>Como <span>começar</span></h2>
+                    <p class="section-subtitle">Três passos simples para transformar sua gestão</p>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-6 my-4 d-flex align-items-center justify-content-center">
+                        <ol class="ui-steps">
+                            <li class="media">
+                                <div class="circle-icon mr-4" aria-hidden="true">1</div>
+                                <div class="media-body">
+                                    <h3 class="step-title">Faça o cadastro</h3>
+                                    <p class="text-gray">Cadastre-se na Zlora, informando os dados básicos do seu estabelecimento. É rápido e fácil.</p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="circle-icon mr-4" aria-hidden="true">2</div>
+                                <div class="media-body">
+                                    <h3 class="step-title">Preencha o passo a passo inicial</h3>
+                                    <p class="text-gray">Informe os cadastros essenciais: serviços, profissionais e jornada de trabalho.</p>
+                                </div>
+                            </li>
+                            <li class="media">
+                                <div class="circle-icon mr-4" aria-hidden="true">3</div>
+                                <div class="media-body">
+                                    <h3 class="step-title">Teste grátis por 30 dias</h3>
+                                    <p class="text-gray">Usufrua de todas as funcionalidades do sistema por 30 dias gratuitamente, sem compromisso.</p>
+                                </div>
+                            </li>
+                        </ol>
+                    </div>
+
+                    <div class="col-md-6 d-flex align-items-center justify-content-center">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0%25' y1='0%25' x2='100%25' y2='100%25'%3E%3Cstop offset='0%25' style='stop-color:%236F3CE7'/%3E%3Cstop offset='100%25' style='stop-color:%238B5CF0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='400' height='300' rx='20' fill='%23EDE7FF'/%3E%3Crect x='40' y='40' width='320' height='50' rx='12' fill='url(%23g1)' opacity='0.9'/%3E%3Crect x='40' y='110' width='320' height='30' rx='8' fill='url(%23g1)' opacity='0.5'/%3E%3Crect x='40' y='160' width='200' height='30' rx='8' fill='url(%23g1)' opacity='0.35'/%3E%3Crect x='40' y='210' width='280' height='30' rx='8' fill='url(%23g1)' opacity='0.2'/%3E%3C/svg%3E"
+                             alt="Ilustração do passo a passo de configuração da Zlora"
+                             class="img-fluid d-none d-lg-block">
+                    </div>
+                </div>
+
+                <div class="text-center mt-4">
+                    <a href="#cadastro" class="btn btn-header">Cadastre-se agora</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ VÍDEO ============ -->
+        <section class="section pt-0" id="case-video">
+            <div class="container">
+                <div class="video-container">
+                    <!-- TODO: VALIDAR — confirmar se este vídeo é institucional do Zlora -->
+                    <iframe src="https://www.youtube.com/embed/5Sn1lMUvg4U?rel=0"
+                            title="Vídeo institucional Zlora"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ PREÇOS ============ -->
+        <section class="section light-bg" id="precos">
+            <div class="container">
+                <header class="section-title">
+                    <h2>Planos e <span>Preços</span></h2>
+                    <p class="section-subtitle">Escolha o plano ideal para o seu negócio</p>
+                </header>
+
+                <div class="d-flex align-items-center justify-content-center mb-5">
+                    <div class="btn-group price-switch flex-wrap justify-content-center" role="group" aria-label="Selecionar periodicidade">
+                        <button type="button" class="btn btn-price active" id="btn-anual" aria-pressed="true">
+                            Anual <span class="price-badge">30% off</span>
+                        </button>
+                        <button type="button" class="btn btn-price" id="btn-semestral" aria-pressed="false">
+                            Semestral <span class="price-badge">15% off</span>
+                        </button>
+                        <button type="button" class="btn btn-price" id="btn-mensal" aria-pressed="false">
+                            Mensal
+                        </button>
+                    </div>
+                </div>
+
+                <!-- ANUAL -->
+                <div class="card-deck price-group" id="group-anual">
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>1 profissional</small>
+                            <span class="price"><sub>R$</sub> 55,90<sub>/mês</sub></span>
+                            <del><span class="price-old">R$ 79,90/mês</span></del>
+                            <p class="price-total">Total: R$ 670,80</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="anual" data-range="1">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing popular">
+                        <div class="ribbon">Popular</div>
+                        <div class="card-head">
+                            <small>2 a 5 profissionais</small>
+                            <span class="price"><sub>R$</sub> 76,90<sub>/mês</sub></span>
+                            <del><span class="price-old">R$ 109,90/mês</span></del>
+                            <p class="price-total">Total: R$ 922,80</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="anual" data-range="2-5">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>6 a 15 profissionais</small>
+                            <span class="price"><sub>R$</sub> 115,15<sub>/mês</sub></span>
+                            <del><span class="price-old">R$ 164,50/mês</span></del>
+                            <p class="price-total">Total: R$ 1.381,80</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="anual" data-range="6-15">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>+15 profissionais</small>
+                            <span class="price"><sub>R$</sub> 153,90<sub>/mês</sub></span>
+                            <del><span class="price-old">R$ 219,90/mês</span></del>
+                            <p class="price-total">Total: R$ 1.846,80</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="anual" data-range="15+">Contratar plano</button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- SEMESTRAL -->
+                <div class="card-deck price-group" id="group-semestral" hidden>
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>1 profissional</small>
+                            <span class="price"><sub>R$</sub> 67,80<sub>/mês</sub></span>
+                            <del><span class="price-old">R$ 79,90/mês</span></del>
+                            <p class="price-total">Total: R$ 406,80</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="semestral" data-range="1">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing popular">
+                        <div class="ribbon">Popular</div>
+                        <div class="card-head">
+                            <small>2 a 5 profissionais</small>
+                            <span class="price"><sub>R$</sub> 93,30<sub>/mês</sub></span>
+                            <del><span class="price-old">R$ 109,90/mês</span></del>
+                            <p class="price-total">Total: R$ 559,80</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="semestral" data-range="2-5">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>6 a 15 profissionais</small>
+                            <span class="price"><sub>R$</sub> 139,80<sub>/mês</sub></span>
+                            <del><span class="price-old">R$ 164,50/mês</span></del>
+                            <p class="price-total">Total: R$ 838,80</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="semestral" data-range="6-15">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>+15 profissionais</small>
+                            <span class="price"><sub>R$</sub> 186,80<sub>/mês</sub></span>
+                            <del><span class="price-old">R$ 219,90/mês</span></del>
+                            <p class="price-total">Total: R$ 1.120,80</p>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="semestral" data-range="15+">Contratar plano</button>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- MENSAL -->
+                <div class="card-deck price-group" id="group-mensal" hidden>
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>1 profissional</small>
+                            <span class="price"><sub>R$</sub> 79,90<sub>/mês</sub></span>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="mensal" data-range="1">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing popular">
+                        <div class="ribbon">Popular</div>
+                        <div class="card-head">
+                            <small>2 a 5 profissionais</small>
+                            <span class="price"><sub>R$</sub> 109,90<sub>/mês</sub></span>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="mensal" data-range="2-5">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>6 a 15 profissionais</small>
+                            <span class="price"><sub>R$</sub> 164,50<sub>/mês</sub></span>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="mensal" data-range="6-15">Contratar plano</button>
+                        </div>
+                    </article>
+
+                    <article class="card pricing">
+                        <div class="card-head">
+                            <small>+15 profissionais</small>
+                            <span class="price"><sub>R$</sub> 219,90<sub>/mês</sub></span>
+                        </div>
+                        <div class="card-body">
+                            <button type="button" class="btn btn-primary btn-block js-plan" data-period="mensal" data-range="15+">Contratar plano</button>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CADASTRO ============ -->
+        <section class="section" id="cadastro">
+            <div class="container">
+                <header class="section-title">
+                    <h2>Selecione a opção e <span>cadastre-se</span></h2>
+                    <p class="section-subtitle">Experimente todas as funcionalidades grátis por 30 dias, sem compromisso.</p>
+                </header>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-md-12">
+
+                        
+                        <div class="text-center"><p>Cadastre seu estabelecimento e gerencie o acesso da sua equipe.</p><a class="btn btn-primary btn-lg" href="/Contas/Registro">Cadastrar estabelecimento</a></div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ FAQ ============ -->
+        <section class="section pt-0" id="faq">
+            <div class="container">
+                <header class="section-title">
+                    <h2>Perguntas <span>frequentes</span></h2>
+                    <p class="section-subtitle">Tire suas dúvidas sobre a Zlora</p>
+                </header>
+
+                <div class="row pt-4">
+                    <div class="col-md-6">
+                        <article class="faq-item">
+                            <h3 class="faq-question">Não possuo CNPJ. Posso utilizar a Zlora?</h3>
+                            <p class="faq-answer">Sim. A Zlora pode ser utilizada tanto por Pessoa Jurídica quanto Pessoa Física.</p>
+                        </article>
+
+                        <article class="faq-item">
+                            <h3 class="faq-question">O período gratuito possui alguma limitação das funcionalidades?</h3>
+                            <p class="faq-answer">Não. Durante o período de teste você pode utilizar o sistema com todas as funcionalidades.</p>
+                        </article>
+
+                        <article class="faq-item">
+                            <h3 class="faq-question">Meus profissionais têm acesso ao sistema?</h3>
+                            <p class="faq-answer">Sim. Podem ter acesso ao módulo web e aplicativo, podendo ter restrições de acesso definidas pelo gestor.</p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6">
+                        <article class="faq-item">
+                            <h3 class="faq-question">Posso alterar meu plano futuramente?</h3>
+                            <p class="faq-answer">Na contratação do plano mensal, você pode fazer a alteração do seu plano a cada vencimento da fatura.</p>
+                        </article>
+
+                        <article class="faq-item">
+                            <h3 class="faq-question">O cliente precisa pagar para baixar o aplicativo?</h3>
+                            <p class="faq-answer">Não. O download do aplicativo Zlora é gratuito e está disponível para iOS e Android.</p>
+                        </article>
+
+                        <article class="faq-item">
+                            <h3 class="faq-question">Consigo exportar minha base de dados?</h3>
+                            <p class="faq-answer">Sim. Entre em contato conosco pelo chat online que informamos como proceder.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ CTA ============ -->
+        <section class="section bg-cta">
+            <div class="container">
+                <div class="call-to-action">
+                    <h2 class="brand-font">Transforme a gestão do seu negócio com a Zlora</h2>
+                    <p>Sistema completo para salões de beleza, barbearias, clínicas de estética e lash designers.</p>
+                    <a href="#cadastro" class="btn btn-light">Começar agora</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="site-footer" id="footer">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <h3 class="menu-footer-title">Ajuda</h3>
+                    <ul class="menu-footer">
+                        <!-- TODO: VALIDAR — apontar para as páginas reais -->
+                        <li><a href="#central-ajuda" data-todo="central-ajuda">Central de Ajuda</a></li>
+                        <li><a href="#funcoes">Funcionalidades</a></li>
+                        <!-- TODO: VALIDAR — substituir por e-mail oficial -->
+                        <li><a href="mailto:contato@@zlora.com.br" data-todo="email">contato@@zlora.com.br</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <h3 class="menu-footer-title">Interesse</h3>
+                    <ul class="menu-footer">
+                        <!-- TODO: VALIDAR — apontar para páginas oficiais ou remover -->
+                        <li><a href="#fiscal" data-todo="modulo-fiscal">Módulo Fiscal</a></li>
+                        <li><a href="#app-proprio" data-todo="app-proprio">Aplicativo Próprio</a></li>
+                        <li><a href="#revenda" data-todo="revenda">Revenda</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 col-md-6 footer-col">
+                    <h3 class="menu-footer-title">Conteúdo</h3>
+                    <ul class="menu-footer">
+                        <!-- TODO: VALIDAR — apontar para páginas oficiais -->
+                        <li><a href="#webserie" data-todo="webserie">WebSérie</a></li>
+                        <li><a href="#blog" data-todo="blog">Blog</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ CONTATO ============ -->
+    <section class="contact-bar light-bg" id="contact">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-3 col-md-12 text-center text-lg-left mb-4 mb-lg-0">
+                    <span class="brand-font contact-brand">Zlora</span>
+                </div>
+
+                <div class="col-lg-5 col-md-12 text-center text-lg-left mb-4 mb-lg-0">
+                    <!-- TODO: VALIDAR — substituir endereço fictício pelo oficial (ou remover) -->
+                    <p class="contact-line">
+                        <span class="ti-location-pin" aria-hidden="true"></span>
+                        <span data-todo="endereco">Endereço a confirmar</span>
+                    </p>
+                    <p class="contact-line">
+                        <span class="ti-email" aria-hidden="true"></span>
+                        <a href="mailto:contato@@zlora.com.br" data-todo="email">contato@@zlora.com.br</a>
+                    </p>
+                    <p class="contact-line">
+                        <span class="fab fa-whatsapp" aria-hidden="true" style="color:#25d366;"></span>
+                        <span data-todo="whatsapp">Telefone a confirmar</span>
+                    </p>
+                </div>
+
+                <div class="col-lg-4 col-md-12 text-center text-lg-right">
+                    <div class="social-icons">
+                        <!-- TODO: VALIDAR — substituir pelos perfis oficiais -->
+                        <a href="#facebook" data-todo="facebook" aria-label="Facebook da Zlora" target="_blank" rel="noopener">
+                            <span class="fab fa-facebook-f" aria-hidden="true"></span>
+                        </a>
+                        <a href="#youtube" data-todo="youtube" aria-label="YouTube da Zlora" target="_blank" rel="noopener">
+                            <span class="fab fa-youtube" aria-hidden="true"></span>
+                        </a>
+                        <a href="#instagram" data-todo="instagram" aria-label="Instagram da Zlora" target="_blank" rel="noopener">
+                            <span class="fab fa-instagram" aria-hidden="true"></span>
+                        </a>
+                        <a href="#twitter" data-todo="twitter" aria-label="Twitter da Zlora" target="_blank" rel="noopener">
+                            <span class="fab fa-twitter" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="copyright">
+        <div class="container text-center">
+            <p><small>© <span id="year">2026</span> Zlora. Todos os direitos reservados.</small></p>
+        </div>
+    </div>
+
+    <!-- ============ WHATSAPP FLUTUANTE ============ -->
+    <!-- TODO: VALIDAR — substituir pelo número oficial de WhatsApp -->
+    <a class="whatsapp-button" href="#whatsapp" data-todo="whatsapp"
+       target="_blank" rel="noopener" aria-label="Falar com a Zlora pelo WhatsApp">
+        <svg class="whatsapp-icon" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+            <path d="M16.001 2.667c-7.352 0-13.333 5.981-13.333 13.333 0 2.35.618 4.646 1.786 6.676l-1.868 6.83 7.013-1.841c1.953 1.034 4.152 1.58 6.402 1.58 7.352 0 13.333-5.981 13.333-13.333S23.353 2.667 16.001 2.667zm0 24.933c-2.002 0-3.956-.518-5.678-1.502l-.407-.235-4.163 1.093 1.107-4.059-.265-.418c-1.096-1.73-1.675-3.729-1.675-5.79 0-6.078 4.956-11.033 11.033-11.033 6.078 0 11.033 4.956 11.033 11.033s-4.955 11.033-11.033 11.033zm6.048-8.322c-.331-.166-1.962-.968-2.266-1.078-.305-.111-.528-.166-.751.166-.222.332-.861 1.078-1.056 1.3-.194.222-.389.25-.72.083-.332-.166-1.398-.516-2.665-1.646-.984-.877-1.646-1.962-1.84-2.294-.194-.332-.021-.512.146-.677.15-.149.333-.388.499-.582.166-.194.222-.332.333-.554.111-.222.056-.416-.028-.582-.083-.166-.751-1.81-1.027-2.485-.27-.649-.544-.561-.751-.57l-.639-.011c-.222 0-.582.083-.888.388-.305.305-1.167 1.139-1.167 2.777s1.194 3.222 1.361 3.444c.166.222 2.351 3.588 5.698 5.026.798.344 1.42.55 1.905.705.8.255 1.528.219 2.104.133.643-.096 1.962-.8 2.239-1.571.277-.772.277-1.432.194-1.571-.083-.139-.305-.222-.637-.388z"/>
+        </svg>
+    </a>
+
+    <!-- ============ SCRIPTS ============ -->
+    <script src="/DS0HomePageDeslogada/js/jquery-3.2.1.min.js"></script>
+    <script src="/DS0HomePageDeslogada/js/bootstrap.bundle.min.js+jquery.mask.min.js+script.js,qv18.pagespeed.jc.DbS1S4ohOB.js"></script>
+    <script src="/DS0HomePageDeslogada/js/jquery.mask.min.js"></script>
+    <script src="/DS0HomePageDeslogada/js/zloara.js"></script>
+</body>
+</html>

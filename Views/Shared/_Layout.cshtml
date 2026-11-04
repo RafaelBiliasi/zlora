@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>@ViewData["Title"] — Zlora</title>
+    <link rel="stylesheet" href="~/DS0HomePageDeslogada/css/boostrap.css">
+    <link rel="stylesheet" href="~/DS0HomePageDeslogada/css/zlora.css">
+    <link rel="stylesheet" href="~/css/contas.css">
+</head>
+@if (User.Identity?.IsAuthenticated == true)
+{
+<body class="app-body">
+    <div class="app-shell">
+        <aside class="app-sidebar" aria-label="Menu principal">
+            <a asp-controller="Home" asp-action="Painel" class="app-logo"><span class="logo-symbol">Z</span><span>Zlora</span></a>
+            <div class="sidebar-label">MENU PRINCIPAL</div>
+            <nav class="sidebar-nav">
+                <a asp-controller="Home" asp-action="Painel" class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")"><span class="nav-icon">⌂</span>Visão geral</a>
+                <a asp-controller="Gestao" asp-action="Agenda" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Agenda" ? "active" : "")"><span class="nav-icon">▦</span>Agenda</a>
+                @if (User.IsInRole(Perfis.Administrador) || User.IsInRole(Perfis.Secretaria)) { <a asp-controller="Gestao" asp-action="Clientes" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Clientes" ? "active" : "")"><span class="nav-icon">♧</span>Clientes</a> }
+                @if (User.IsInRole(Perfis.Administrador)) { <a asp-controller="Gestao" asp-action="Servicos" class="@(ViewContext.RouteData.Values["action"]?.ToString() == "Servicos" ? "active" : "")"><span class="nav-icon">✦</span>Serviços</a> }
+                @if (User.IsInRole(Perfis.Administrador)) { <a asp-controller="Usuarios" asp-action="Index"><span class="nav-icon">♙</span>Equipe</a> }
+                @if (User.IsInRole(Perfis.Administrador)) { <a asp-controller="Gestao" asp-action="Relatorio"><span class="nav-icon">▥</span>Relatórios</a> }
+            </nav>
+            <div class="sidebar-spacer"></div>
+            <div class="sidebar-future"><span>◒</span><div><strong>Em breve</strong><small>Financeiro e estoque</small></div></div>
+            <form asp-controller="Contas" asp-action="Logout" method="post" class="sidebar-logout"><button><span class="nav-icon">↪</span>Sair</button></form>
+        </aside>
+        <div class="app-main">
+            <header class="app-topbar"><div><span class="eyebrow">@((string?)ViewData["Section"] ?? "PAINEL DE GESTÃO")</span><h2>@ViewData["Title"]</h2></div><div class="topbar-user"><span class="notification-dot">♢</span><span class="avatar">@(User.Identity?.Name?.Substring(0, 1).ToUpperInvariant() ?? "Z")</span><div><strong>@(User.Identity?.Name ?? "Usuário")</strong><small>Conta Zlora</small></div></div></header>
+            <main class="app-content">
+                @if (TempData["Mensagem"] is string mensagem) { <div class="notice" role="status">@mensagem</div> }
+                @if (TempData["Erro"] is string erro) { <div class="notice error" role="alert">@erro</div> }
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+</body>
+}
+else
+{
+<body class="contas-body">
+    <nav class="contas-nav" aria-label="Navegação principal"><a asp-controller="Home" asp-action="Index" class="brand-font">Zlora</a><div><a asp-controller="Contas" asp-action="Login">Acessar</a></div></nav>
+    <main>@if (TempData["Mensagem"] is string mensagem) { <div class="notice" role="status">@mensagem</div> } @if (TempData["Erro"] is string erro) { <div class="notice error" role="alert">@erro</div> } @RenderBody()</main>
+</body>
+}
+<script src="~/js/contas.js"></script>
+</html>

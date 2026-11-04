@@ -1,0 +1,17 @@
+@model RegistroViewModel
+@{ ViewData["Title"] = "Cadastro"; }
+<section class="content-card registro">
+    <header class="section-title"><h1>Cadastre seu estabelecimento</h1><p>Você será o administrador e poderá cadastrar sua equipe.</p></header>
+    <form asp-action="Registro" method="post">
+        <div asp-validation-summary="All" class="validation" role="alert"></div>
+        <div class="row">
+            <div class="col-12 form-group"><label asp-for="Nome">Nome do estabelecimento</label><input asp-for="Nome" class="form-control" placeholder="Nome do estabelecimento" minlength="2" maxlength="150" autocomplete="organization" required></div>
+            <div class="col-md-6 form-group"><label asp-for="NomeContato">Nome do contato</label><input asp-for="NomeContato" class="form-control" placeholder="Ex: João Silva" minlength="2" maxlength="120" autocomplete="name" required></div>
+            <div class="col-md-6 form-group"><label asp-for="Telefone">Celular do contato</label><input asp-for="Telefone" type="tel" class="form-control" placeholder="(00) 00000-0000" maxlength="20" autocomplete="tel" required></div>
+            <div class="col-md-6 form-group"><label asp-for="Email">E-mail para acesso</label><input asp-for="Email" type="email" class="form-control" placeholder="seu@email.com" maxlength="254" autocomplete="username" required></div>
+            <div class="col-md-6 form-group"><label asp-for="Senha">Senha</label><input asp-for="Senha" type="password" class="form-control" minlength="6" maxlength="15" autocomplete="new-password" required><small>Entre 6 e 15 caracteres.</small></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Cadastrar</button>
+        <a asp-action="Login" class="ml-3">Já tenho conta</a>
+    </form>
+</section>

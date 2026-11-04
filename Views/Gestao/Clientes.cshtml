@@ -1,0 +1,5 @@
+@model List<Cliente>
+@{ ViewData["Title"] = "Clientes"; }
+<section class="content-card wide"><div class="page-head"><div><h1>Clientes</h1><p>Cadastros e histórico de clientes da sua empresa.</p></div></div>
+@if (User.IsInRole(Perfis.Administrador) || User.IsInRole(Perfis.Secretaria)) { <form asp-action="CriarCliente" method="post" class="inline-form"><input name="Nome" placeholder="Nome" required><input name="Email" type="email" placeholder="E-mail"><input name="Telefone" placeholder="Telefone" required><button class="btn btn-primary">Cadastrar cliente</button></form> }
+<div class="table-responsive"><table class="table"><thead><tr><th>Nome</th><th>Contato</th><th>Cadastro</th></tr></thead><tbody>@foreach(var c in Model){<tr><td><strong>@c.Nome</strong></td><td>@c.Email<br>@c.Telefone</td><td>@c.CriadoEm.ToLocalTime().ToString("dd/MM/yyyy")</td></tr>}</tbody></table></div></section>

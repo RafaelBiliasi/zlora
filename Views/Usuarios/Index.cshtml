@@ -1,0 +1,21 @@
+@model List<UsuarioViewModel>
+@inject Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> Users
+@{ ViewData["Title"] = "Usuários"; }
+<section class="content-card wide">
+    <h1>Usuários</h1><p>Somente o administrador pode definir os perfis de acesso.</p>
+    <p><a class="btn btn-primary" asp-action="Criar">Cadastrar usuário</a></p>
+    <div class="table-responsive"><table class="table"><thead><tr><th>Nome / Estabelecimento</th><th>E-mail</th><th>Status</th><th>Perfil</th><th>Configurar acesso</th></tr></thead><tbody>
+    @foreach (var usuario in Model) {
+        <tr><td>@usuario.Nome<br><small>@usuario.Estabelecimento</small></td><td>@usuario.Email</td><td>@usuario.Status</td><td>@(usuario.Perfil == "" ? "Aguardando definição" : usuario.Perfil)</td>
+        <td>@if (usuario.Id == Users.GetUserId(User)) { <span>Sua conta</span> } else {
+            <form asp-action="Perfil" method="post" class="role-form">
+                <input type="hidden" name="id" value="@usuario.Id">
+                <select name="perfil" aria-label="Perfil de @usuario.Nome" required>
+                    <option value="">Selecione</option>
+                    @foreach (var perfil in new[] { Perfis.Secretaria, Perfis.Profissional }) { <option value="@perfil" selected="@(perfil == usuario.Perfil)">@perfil</option> }
+                </select><button type="submit" class="btn btn-primary">Salvar</button>
+            </form>
+        }</td></tr>
+    }
+    </tbody></table></div>
+</section>

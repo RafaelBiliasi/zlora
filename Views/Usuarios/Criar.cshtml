@@ -1,0 +1,16 @@
+@model ColaboradorViewModel
+@{ ViewData["Title"] = "Cadastrar usuário"; }
+<section class="content-card registro">
+    <h1>Cadastrar usuário</h1>
+    <form asp-action="Criar" method="post">
+        <div asp-validation-summary="All" class="validation" role="alert"></div>
+        <div class="row">
+            <div class="col-md-6 form-group"><label asp-for="Nome">Nome</label><input asp-for="Nome" class="form-control" minlength="2" maxlength="120" required></div>
+            <div class="col-md-6 form-group"><label asp-for="Telefone">Telefone</label><input asp-for="Telefone" type="tel" class="form-control" maxlength="20" required></div>
+            <div class="col-md-6 form-group"><label asp-for="Email">E-mail</label><input asp-for="Email" type="email" class="form-control" maxlength="254" required></div>
+            <div class="col-md-6 form-group"><label asp-for="Senha">Senha inicial</label><input asp-for="Senha" type="password" class="form-control" minlength="6" maxlength="15" autocomplete="new-password" required><small>Entre 6 e 15 caracteres.</small></div>
+            <div class="col-md-6 form-group"><label asp-for="Perfil">Perfil</label><select asp-for="Perfil" class="form-control" required><option value="">Selecione</option><option>Secretaria</option><option>Profissional</option></select></div>
+        </div>
+        <button class="btn btn-primary" type="submit">Cadastrar</button><a asp-action="Index" class="ml-3">Voltar</a>
+    </form>
+</section>
